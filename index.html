@@ -9,11 +9,20 @@
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
   </head>
 <body>
-  
+
+<div id="warning" class="align-center-middle text-center">
+	<div class="warning-box">
+		 <h1>WARNING: Smokeless tobacco is addictive. </h1>
+	</div>
+	<img class="nav margin-vertical-1" src="assets/img/nav-desktop.png">
+</div>
+
+
 
 <div id="hero-mission" class="parallaxParent">
   <div class="show-for-medium bkg" style="background-image: url('assets/img/hero-mission.jpg');"></div>
   <div class="hide-for-medium bkg" style="background-image: url('assets/img/hero-mission-m.jpg');"></div>
+  
 </div>
 
 <div id="kasilof" class="project">
@@ -110,6 +119,16 @@
 <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
 <script>
   AOS.init();
+</script>
+
+<script>
+	$(window).scroll(function() {
+  if ($(this).scrollTop() > 0) {
+    $('.nav').fadeOut();
+  } else {
+    $('.nav').fadeIn();
+  }
+});
 </script>
 
 </body>
