@@ -22692,7 +22692,15 @@ new ScrollMagic.Scene({
 }).setTween("#parallax4 > div", {
   y: "80%",
   ease: Linear.easeNone
-}).addTo(controller);
+}).addTo(controller); // hide nav on scroll
+
+jquery__WEBPACK_IMPORTED_MODULE_0___default()(window).scroll(function () {
+  if (jquery__WEBPACK_IMPORTED_MODULE_0___default()(this).scrollTop() > 0) {
+    jquery__WEBPACK_IMPORTED_MODULE_0___default()('.nav').fadeOut();
+  } else {
+    jquery__WEBPACK_IMPORTED_MODULE_0___default()('.nav').fadeIn();
+  }
+});
 
 /***/ }),
 

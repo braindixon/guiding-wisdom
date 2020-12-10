@@ -14,15 +14,21 @@
 	<div class="warning-box">
 		 <h1>WARNING: Smokeless tobacco is addictive. </h1>
 	</div>
-	<img class="nav margin-vertical-1" src="assets/img/nav-desktop.png">
+	<img class="show-for-medium nav margin-vertical-1" src="assets/img/nav-desktop.png">
+	<img class="hide-for-medium nav margin-vertical-1" src="assets/img/nav-mobile.png">
 </div>
 
 
-
-<div id="hero-project-kasilof" class="parallaxParent">
+<!--<div id="hero-project-kasilof" class="parallaxParent">
   <div class="show-for-medium bkg" style="background-image: url('assets/img/hero-project-kasilof.jpg');"></div>
-  <div class="hide-for-medium bkg" style="background-image: url('assets/img/hero-project-kasilof-m.jpg');"></div>
+  <div class="hide-for-medium bkg" style="background-image: url('assets/img/hero-project-kasilof-m.jpg');"></div>-->
+
+  <video playsinline autoplay muted loop poster="assets/img/test.jpg" id="bgvid">
+  <source src="assets/img/test.mp4" type="video/mp4">
+</video>
 </div>
+
+
 
 <div id="kasilof" class="project">
     
@@ -175,16 +181,16 @@
               </div>
             </div>    </div>
 
-</div>
-
-<div class="hide-for-medium grid-x align-center-middle margin-vertical-3">
+</div>  
+<footer>
+	<div class="hide-for-medium grid-x align-center-middle">
   <img src="assets/img/footer-mobile.png">
 </div>
 
-<div class="show-for-medium grid-x align-center-middle margin-vertical-3">
+<div class="show-for-medium grid-x align-center-middle">
   <img src="assets/img/footer-desktop.png">
-</div>  
-
+</div>
+</footer>
 <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
 <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.11.2.min.js"><\/script>')</script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/1.18.2/TweenMax.min.js"></script>
@@ -197,16 +203,6 @@
 <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
 <script>
   AOS.init();
-</script>
-
-<script>
-	$(window).scroll(function() {
-  if ($(this).scrollTop() > 0) {
-    $('.nav').fadeOut();
-  } else {
-    $('.nav').fadeIn();
-  }
-});
 </script>
 
 </body>
